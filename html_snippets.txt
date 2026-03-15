@@ -1,0 +1,4 @@
+<a class="inline-flex items-center gap-2 text-primary text-[10px] font-bold uppercase tracking-widest hover:underline"
+                                    href="#">
+                                    <span class="material-symbols-outlined text-sm">directions</span>
+                                </a>

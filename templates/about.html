@@ -1,0 +1,307 @@
+{% extends "layout.html" %}
+{% block content %}
+    <body
+        class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+        <div
+            class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+            <div class="layout-container flex h-full grow flex-col">
+                <!-- Top Navigation -->
+                {{super()}}
+                <main
+                    class="flex flex-1 justify-center py-10 px-6 md:px-20 lg:px-40">
+                    <div
+                        class="layout-content-container flex flex-col max-w-[960px] flex-1 gap-12">
+                        <!-- Hero Profile Section -->
+                        <section
+                            class="flex flex-col md:flex-row gap-8 items-center md:items-start p-8 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                            <div class="relative">
+                                <div
+                                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-40 w-40 border-4 border-primary/20"
+                                    data-alt="Professional portrait of Dr. Julian Vance in medical attire"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6uHBSJvqGddGAVG7-o94dywr8PlRvNi2fHfoGPgzbJOipTbJiSUce6LDqw65FPjAYDQt23v18UN1XAi_77kSTo2hsZQWwgmpmwF6_Mp06P7KleMUKYm6Za0leaBNjlKHz2GwtnnqpsxwXaiHyvOCsl7ijMKpbt8jmTk66NBgjC0-UN_n5vhVrv8-TmPRO9MaatbbCt_gZiipxX2dzIfeNpUwlOSCKEeFSFTf6bonzVhUZboY922nc7vSATIjpt9DYPjAkObaZmlU");'>
+                                </div>
+                                <div
+                                    class="absolute bottom-2 right-2 bg-primary text-white p-1.5 rounded-full border-2 border-white dark:border-slate-900">
+                                    <span
+                                        class="material-symbols-outlined text-sm">verified</span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-3 text-center md:text-left flex-1">
+                                <div class="space-y-1">
+                                    <h1
+                                        class="text-slate-900 dark:text-slate-100 text-3xl font-bold tracking-tight">Dr.
+                                        Julian Vance, MD, PhD</h1>
+                                    <p
+                                        class="text-primary text-lg font-semibold uppercase tracking-wide text-sm">Board
+                                        Certified Cardiologist &amp; Clinical
+                                        Researcher</p>
+                                </div>
+                                <p
+                                    class="text-slate-600 dark:text-slate-400 text-base leading-relaxed">
+                                    With over two decades of clinical experience
+                                    at leading academic medical centers, I
+                                    specialize in complex cardiovascular
+                                    diagnostics and preventive interventional
+                                    cardiology. My work bridges the gap between
+                                    laboratory discovery and bedside patient
+                                    care.
+                                </p>
+                                <div
+                                    class="flex flex-wrap gap-2 justify-center md:justify-start mt-2">
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs font-medium border border-slate-200 dark:border-slate-700">Fellow
+                                        of ACC</span>
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs font-medium border border-slate-200 dark:border-slate-700">AHA
+                                        Research Member</span>
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs font-medium border border-slate-200 dark:border-slate-700">Top
+                                        Doctor 2023</span>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Professional Philosophy -->
+                        <section class="space-y-4" id="philosophy">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary">psychology</span>
+                                <h2
+                                    class="text-slate-900 dark:text-slate-100 text-2xl font-bold tracking-tight">Professional
+                                    Philosophy</h2>
+                            </div>
+                            <div
+                                class="p-6 rounded-xl bg-primary/5 border-l-4 border-primary">
+                                <p
+                                    class="text-slate-800 dark:text-slate-200 text-lg italic leading-relaxed font-medium">
+                                    "Medicine is not merely the absence of disease, but the cultivation of vitality. My practice is built on the triad of clinical precision, technological innovation, and deeply personal empathy. We treat the patient, not just the pathology."
+                                </p>
+                            </div>
+                        </section>
+                        <!-- Medical Expertise -->
+                        <section class="space-y-6" id="expertise">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary">clinical_notes</span>
+                                <h2
+                                    class="text-slate-900 dark:text-slate-100 text-2xl font-bold tracking-tight">Medical
+                                    Expertise</h2>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div
+                                    class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-primary/50 transition-colors group">
+                                    <h3
+                                        class="text-primary font-bold mb-2 flex items-center gap-2">
+                                        <span
+                                            class="material-symbols-outlined text-sm">monitor_heart</span>
+                                        Cardiovascular Diagnostics
+                                    </h3>
+                                    <p
+                                        class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Advanced
+                                        imaging including 4D echocardiography,
+                                        cardiac MRI interpretation, and genomic
+                                        risk profiling for early detection.</p>
+                                </div>
+                                <div
+                                    class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-primary/50 transition-colors group">
+                                    <h3
+                                        class="text-primary font-bold mb-2 flex items-center gap-2">
+                                        <span
+                                            class="material-symbols-outlined text-sm">biotech</span>
+                                        Interventional Cardiology
+                                    </h3>
+                                    <p
+                                        class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Minimally
+                                        invasive catheter-based treatments,
+                                        structural heart interventions, and
+                                        complex coronary artery procedures.</p>
+                                </div>
+                                <div
+                                    class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-primary/50 transition-colors group">
+                                    <h3
+                                        class="text-primary font-bold mb-2 flex items-center gap-2">
+                                        <span
+                                            class="material-symbols-outlined text-sm">health_metrics</span>
+                                        Preventive Medicine
+                                    </h3>
+                                    <p
+                                        class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Evidence-based
+                                        lifestyle modification programs,
+                                        lipidology, and metabolic health
+                                        optimization to preempt chronic
+                                        conditions.</p>
+                                </div>
+                                <div
+                                    class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-primary/50 transition-colors group">
+                                    <h3
+                                        class="text-primary font-bold mb-2 flex items-center gap-2">
+                                        <span
+                                            class="material-symbols-outlined text-sm">science</span>
+                                        Clinical Research
+                                    </h3>
+                                    <p
+                                        class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Principal
+                                        investigator for Phase III
+                                        cardiovascular trials focused on novel
+                                        pharmaceutical pathways and
+                                        bio-electronic medicine.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Practice Methodologies -->
+                        <section class="space-y-6" id="methods">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary">schema</span>
+                                <h2
+                                    class="text-slate-900 dark:text-slate-100 text-2xl font-bold tracking-tight">Practice
+                                    Methodologies</h2>
+                            </div>
+                            <div
+                                class="relative overflow-hidden rounded-xl bg-slate-900 p-8 text-white">
+                                <div
+                                    class="absolute top-0 right-0 p-4 opacity-10">
+                                    <span
+                                        class="material-symbols-outlined text-[120px]">labs</span>
+                                </div>
+                                <div
+                                    class="relative z-10 grid md:grid-cols-3 gap-8">
+                                    <div class="space-y-2">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-primary flex items-center justify-center font-bold text-lg">1</div>
+                                        <h4 class="font-bold">Data-Driven
+                                            Analysis</h4>
+                                        <p
+                                            class="text-slate-400 text-xs">Utilizing
+                                            AI-augmented diagnostics to
+                                            synthesize hundreds of biomarkers
+                                            into a coherent health map.</p>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-primary flex items-center justify-center font-bold text-lg">2</div>
+                                        <h4 class="font-bold">Holistic
+                                            Integration</h4>
+                                        <p
+                                            class="text-slate-400 text-xs">Coordinating
+                                            with nutritionists and therapists to
+                                            address the environmental factors of
+                                            health.</p>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-primary flex items-center justify-center font-bold text-lg">3</div>
+                                        <h4 class="font-bold">Continuous
+                                            Monitoring</h4>
+                                        <p
+                                            class="text-slate-400 text-xs">Implementing
+                                            remote patient monitoring for
+                                            real-world insights beyond the
+                                            clinic walls.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Education & Certifications -->
+                        <section class="space-y-6 pb-12" id="education">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary">school</span>
+                                <h2
+                                    class="text-slate-900 dark:text-slate-100 text-2xl font-bold tracking-tight">Education
+                                    &amp; Certifications</h2>
+                            </div>
+                            <div class="space-y-4">
+                                <div
+                                    class="flex gap-6 items-start p-4 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                                    <div
+                                        class="flex-shrink-0 size-12 bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center">
+                                        <span
+                                            class="material-symbols-outlined text-slate-500">workspace_premium</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4
+                                            class="text-slate-900 dark:text-slate-100 font-bold">Johns
+                                            Hopkins School of Medicine</h4>
+                                        <p class="text-slate-500 text-sm">MD
+                                            &amp; PhD in Molecular Physiology |
+                                            2002 - 2008</p>
+                                        <p
+                                            class="text-slate-600 dark:text-slate-400 text-sm mt-1">Dissertation
+                                            on Cardiomyocyte Regeneration
+                                            Pathways. Summa Cum Laude.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex gap-6 items-start p-4 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                                    <div
+                                        class="flex-shrink-0 size-12 bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center">
+                                        <span
+                                            class="material-symbols-outlined text-slate-500">history_edu</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4
+                                            class="text-slate-900 dark:text-slate-100 font-bold">Mayo
+                                            Clinic Residency</h4>
+                                        <p
+                                            class="text-slate-500 text-sm">Internal
+                                            Medicine Residency &amp; Fellowship
+                                            | 2008 - 2012</p>
+                                        <p
+                                            class="text-slate-600 dark:text-slate-400 text-sm mt-1">Chief
+                                            Resident 2011. Specialized in
+                                            Advanced Heart Failure.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex gap-6 items-start p-4 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                                    <div
+                                        class="flex-shrink-0 size-12 bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center">
+                                        <span
+                                            class="material-symbols-outlined text-slate-500">cardiology</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4
+                                            class="text-slate-900 dark:text-slate-100 font-bold">American
+                                            Board of Internal Medicine</h4>
+                                        <p
+                                            class="text-slate-500 text-sm">Diplomate,
+                                            Cardiovascular Disease | Ongoing
+                                            Recertification</p>
+                                        <p
+                                            class="text-slate-600 dark:text-slate-400 text-sm mt-1">Special
+                                            competency in Adult Echocardiography
+                                            (NBE).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Footer Call to Action -->
+                        <footer
+                            class="border-t border-slate-200 dark:border-slate-800 pt-10 pb-20 text-center">
+                            <div class="max-w-2xl mx-auto space-y-6">
+                                <h3
+                                    class="text-2xl font-bold text-slate-900 dark:text-slate-100">Interested
+                                    in collaborating or booking a
+                                    consultation?</h3>
+                                <p
+                                    class="text-slate-600 dark:text-slate-400">Dr.
+                                    Vance is currently accepting new patients
+                                    for complex consultations and research
+                                    partnerships in the Metropolitan area.</p>
+                                <div class="flex gap-4 justify-center">
+                                    <button
+                                        class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-bold transition-all shadow-lg shadow-primary/20">Book
+                                        Appointment</button>
+                                    <button
+                                        class="bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-900 dark:text-slate-100 px-8 py-3 rounded-lg font-bold transition-all">Download
+                                        CV</button>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+{% endblock %}
